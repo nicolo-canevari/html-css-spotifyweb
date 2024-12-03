@@ -16,11 +16,45 @@
 
 
 /* BLOCCO NAVBAR */
+
+/* regole macro-blocco */
 #wrapper nav {
     height: 100%;
     width: 250px;
-    background-color: #0000;
+    background-color:black;
+     /* DEBUG */
+     border: 1px solid white;
 }
+
+/* regole micro-blocchi */
+#logo_spotify {
+     /* DEBUG */
+     border: 1px solid white;
+     height: 10%;
+     width: 100%;
+}
+
+#home_menu {
+    /* DEBUG */
+    border: 1px solid white;
+    height: 15%;
+    width: 100%;
+}
+
+#nav_playlist {
+     /* DEBUG */
+     border: 1px solid white;
+     height: 65%;
+     width: 100%;
+}
+
+#nav_account {
+    /* DEBUG */
+    border: 1px solid white;
+    height: 10%;
+    width: 100%;
+}
+
 
 
 /* BLOCCO PRINCIPALE DELLA PAGINA */
@@ -29,10 +63,11 @@
     height: 100%;
     width: calc(100% - 250px);
     background-color: #141922;
-    border: 1px solid;
+    /* DEBUG */
+    border: 1px solid white;
 }
 
-/* div upgrade */
+/* blocco upgrade */
 #main-fixed {
     height: 100px;
     width: 100%;
@@ -42,6 +77,7 @@
     border: 1px solid white;
 }
 
+/* contenuto blocco upgrade */
 #upgrade {
     display: flex;
     justify-content: center;
@@ -56,18 +92,40 @@
 
 #upgrade a {
     color: white;
-    padding: 20px 40px;
+    padding: 10px 40px;
     border-radius: 9999px;
     border: 1px solid white;
     text-decoration: none;
 }
 
 
+
 /* BLOCCO PLAYER */
 
-#player {
+aside {
+    display: flex;
     height: 100px;
     background-color: #282828;
+    /* DEBUG */
+    border: 1px solid white;
+}
+
+#album_aside {
+    /* DEBUG */
+    border: 1px solid white;
+    width: 20%;
+}
+
+#player {
+     /* DEBUG */
+     border: 1px solid white;
+     width: 60%;
+}
+
+#setting {
+     /* DEBUG */
+     border: 1px solid white;
+     width: 20%;
 }
 
 
