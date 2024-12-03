@@ -9,7 +9,7 @@
 /* BLOCCO CONTAINER #WRAPPER*/
 #wrapper {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
     /* DEBUG */
     /* background-color: red; */
 }
@@ -61,7 +61,7 @@
 #wrapper main {
     overflow: auto;
     height: 100%;
-    width: calc(100% - 250px);
+    width: calc(100% - 100px);
     background-color: #141922;
     /* DEBUG */
     border: 1px solid white;
@@ -72,7 +72,6 @@
     height: 100px;
     width: 100%;
     background-color: rgba(8, 11, 18, 0.5);
-    position: relative;
     /* DEBUG */
     border: 1px solid white;
 }
@@ -85,8 +84,8 @@
     position: absolute;
     right: 0;
     height: 100px;
-    width: 300px;
     /* DEBUG */
+    width: 300px;
     border: 1px solid white;
 }
 
@@ -99,6 +98,21 @@
 }
 
 
+/* contenuto del main */
+
+#main_menu {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 100px;
+    width: 100%;
+     /* DEBUG */
+     height: 50px;
+     border: 1px solid white;
+}
+
 
 /* BLOCCO PLAYER */
 
@@ -110,6 +124,8 @@ aside {
     border: 1px solid white;
 }
 
+
+/* regole micro-blocchi */
 #album_aside {
     /* DEBUG */
     border: 1px solid white;
