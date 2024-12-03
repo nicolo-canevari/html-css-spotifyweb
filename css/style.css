@@ -7,11 +7,13 @@
 
 
 /* BLOCCO CONTAINER #WRAPPER*/
+
+/* regole macro-blocco */
 #wrapper {
     display: flex;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     /* DEBUG */
-    /* background-color: red; */
+    background-color: red;
 }
 
 
@@ -21,75 +23,77 @@
 #wrapper nav {
     height: 100%;
     width: 250px;
-    background-color:black;
-     /* DEBUG */
-     border: 1px solid white;
+    /* DEBUG */
+    background-color: black;
 }
+
 
 /* regole micro-blocchi */
 #logo_spotify {
-     /* DEBUG */
-     border: 1px solid white;
-     height: 10%;
-     width: 100%;
-}
-
-#home_menu {
-    /* DEBUG */
-    border: 1px solid white;
-    height: 15%;
-    width: 100%;
-}
-
-#nav_playlist {
-     /* DEBUG */
-     border: 1px solid white;
-     height: 65%;
-     width: 100%;
-}
-
-#nav_account {
     /* DEBUG */
     border: 1px solid white;
     height: 10%;
     width: 100%;
 }
 
+#home_menu {
+   /* DEBUG */
+   border: 1px solid white;
+   height: 15%;
+   width: 100%;
+}
+
+#nav_playlist {
+    /* DEBUG */
+    border: 1px solid white;
+    height: 65%;
+    width: 100%;
+}
+
+#nav_account {
+   /* DEBUG */
+   border: 1px solid white;
+   height: 10%;
+   width: 100%;
+}
 
 
 /* BLOCCO PRINCIPALE DELLA PAGINA */
+
+/* regole macro-blocco */
 #wrapper main {
     overflow: auto;
     height: 100%;
-    width: calc(100% - 100px);
-    background-color: #141922;
+    width: calc(100% - 250px);
     /* DEBUG */
-    border: 1px solid white;
+    background-color: #141922;
+        /* DEBUG */
+        border: 1px solid white;
+
 }
 
-/* blocco upgrade */
+
+/* regole micro-blocchi */
 #main-fixed {
-    height: 100px;
     width: 100%;
     background-color: rgba(8, 11, 18, 0.5);
     /* DEBUG */
     border: 1px solid white;
+    height: 100px;
 }
-
-/* contenuto blocco upgrade */
+ /* menù_main */
 #upgrade {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    position: absolute;
-    right: 0;
-    height: 100px;
-    /* DEBUG */
-    width: 300px;
-    border: 1px solid white;
+    padding-right: 20px;
+    height: 100%;
 }
 
 #upgrade a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     padding: 10px 40px;
     border-radius: 9999px;
@@ -97,24 +101,77 @@
     text-decoration: none;
 }
 
-
-/* contenuto del main */
-
 #main_menu {
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    top: 100px;
     width: 100%;
      /* DEBUG */
      height: 50px;
      border: 1px solid white;
 }
 
+#main_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    border: 1px solid white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* album */
+
+.col_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px 20px;
+    margin: 40px 20px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+}
+
+.album {
+    height: 70%;
+    border: 1px solid white;
+}
+
+.text {
+    height: 30%;
+    border: 1px solid orange;
+}
+
+.col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px 20px;
+    margin: 40px 20px;    
+}
+
+.col .card {
+    
+}
+
+
+
 
 /* BLOCCO PLAYER */
+
+/* regole macro-blocco */
 
 aside {
     display: flex;
@@ -122,27 +179,31 @@ aside {
     background-color: #282828;
     /* DEBUG */
     border: 1px solid white;
-}
 
+}
 
 /* regole micro-blocchi */
 #album_aside {
     /* DEBUG */
+    height: 100%;
     border: 1px solid white;
     width: 20%;
 }
 
 #player {
      /* DEBUG */
+     height: 100%;
      border: 1px solid white;
      width: 60%;
 }
 
 #setting {
      /* DEBUG */
+     height: 100%;
      border: 1px solid white;
      width: 20%;
 }
+
 
 
 
@@ -152,7 +213,7 @@ aside {
     /* blocco navigazione principale */
     /* #wrapper nav {
         width: 80px;
-    }
+    } */
 
 
     /* blocco di contenuto principale */
@@ -161,4 +222,4 @@ aside {
     } */
 
 
-} */ */
+} */
