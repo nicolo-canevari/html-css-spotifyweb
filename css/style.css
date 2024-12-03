@@ -1,0 +1,90 @@
+/* REGOLE GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BLOCCO CONTAINER #WRAPPER*/
+#wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+    /* DEBUG */
+    /* background-color: red; */
+}
+
+
+/* BLOCCO NAVBAR */
+#wrapper nav {
+    height: 100%;
+    width: 250px;
+    background-color: #0000;
+}
+
+
+/* BLOCCO PRINCIPALE DELLA PAGINA */
+#wrapper main {
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: #141922;
+    border: 1px solid;
+}
+
+/* div upgrade */
+#main-fixed {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(8, 11, 18, 0.5);
+    position: relative;
+    /* DEBUG */
+    border: 1px solid white;
+}
+
+#upgrade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    height: 100px;
+    width: 300px;
+    /* DEBUG */
+    border: 1px solid white;
+}
+
+#upgrade a {
+    color: white;
+    padding: 20px 40px;
+    border-radius: 9999px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+/* BLOCCO PLAYER */
+
+#player {
+    height: 100px;
+    background-color: #282828;
+}
+
+
+
+/* versione small mmobile */
+/* @media screen and (max-width:480px) {
+
+    /* blocco navigazione principale */
+    /* #wrapper nav {
+        width: 80px;
+    }
+
+
+    /* blocco di contenuto principale */
+    /* #wrapper main {
+        width: calc(100% - 80px);
+    } */
+
+
+} */ */
