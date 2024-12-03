@@ -28,20 +28,56 @@
 }
 
 
-/* regole micro-blocchi */
+/* regole micro-blocchi nav*/
 #logo_spotify {
+    display: flex;
+    text-align: center;
+    color: white;
     /* DEBUG */
     border: 1px solid white;
     height: 10%;
     width: 100%;
 }
 
+#logo_spotify img{
+    padding-left: 10px;
+    max-width: 50px; 
+}
+
+h1 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
 #home_menu {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    /* DEBUG */
    border: 1px solid white;
    height: 15%;
    width: 100%;
 }
+
+#home_menu a {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#home_menu i {
+    font-size: 30px;
+    color: #a2a2a2;
+}
+
+#home_menu span {
+    color: white;
+    font-size: 15px;
+    padding-left:10px;
+}
+
 
 #nav_playlist {
     /* DEBUG */
@@ -50,11 +86,95 @@
     width: 100%;
 }
 
+.inline_block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nav_playlist h3 {
+    font-size: 20px;
+    padding: 20px 10px;
+    color: white;
+}
+
+#nav_playlist a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#nav_playlist i {
+    font-size: 50px;
+    color: #a2a2a2;
+}
+
+#nav_playlist span {
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+#your_playlist {
+    padding-top: 10px;
+}
+
+#your_playlist li {
+    text-decoration: none;
+    padding: 7px 10px;
+}
+
+#your_playlist input{
+    font-size: 15px;
+    color: #a2a2a2;
+    background-color: black;
+    border: none;
+}
+
+
 #nav_account {
    /* DEBUG */
    border: 1px solid white;
    height: 10%;
    width: 100%;
+}
+
+#download_app i {
+    font-size: 15px;
+    color: #a2a2a2;
+    padding: 7px 10px;;
+}
+
+#download_app span {
+    color: white;
+}
+
+#nav_border {
+    border: 1px solid #a2a2a2;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+#user {
+    padding: 7px 10px;;
+}
+
+#user a {
+    text-decoration: none;
+}
+
+#user i {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #a2a2a2;
+    color: white;
+    border-radius: 9999px;
+}
+
+#user span {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 
@@ -101,6 +221,7 @@
     text-decoration: none;
 }
 
+
 #main_menu {
     display: flex;
     justify-content: center;
@@ -113,7 +234,7 @@
 
 #main_list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
@@ -121,6 +242,11 @@
     border: 1px solid white;
     text-decoration: none;
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #a2a2a2;
 }
 
 
@@ -137,8 +263,8 @@
 }
 
 .card {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     background-color: red;
     margin: 10px;
 }
