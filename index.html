@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
@@ -25,6 +28,7 @@
             
             </div>
 
+            <!-- icone menu nav -->
             <div id="home_menu">
 
                 <a href=""><i class="fa-solid fa-house"></i> <span>Home</span></a>
@@ -33,6 +37,7 @@
 
             </div>
 
+            <!-- playlist nav -->
             <div id="nav_playlist">
 
                 <h3>PLAYLIST</h3>
@@ -60,6 +65,7 @@
 
             </div>
 
+            <!-- account e download app -->
             <div id="nav_account">
 
                 <div id="download_app">
@@ -90,7 +96,7 @@
             <div id="main-fixed">
 
                 <div id="upgrade">
-                   <a href="fai 'upgrade">EFFETTUA L'UPGRADE</a>
+                   <a href="">EFFETTUA L'UPGRADE</a>
                 </div>
 
                 <!-- menù_main -->
@@ -109,7 +115,7 @@
 
                 </div>
                 
-                <!-- album -->
+                <!-- album e titoli-->
                 <h2>Recently played</h2>
 
                 <div class="row_wrap">
@@ -134,7 +140,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/stranger.jpeg" alt="starnger things">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -147,7 +158,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -160,7 +176,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/split.jpeg" alt="split">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -173,7 +194,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/cure.jpeg" alt="cure">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -186,7 +212,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/sinister.jpeg" alt="sinister">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -206,7 +237,13 @@
                     <div class="card">
 
                         <div class="album">
-                            <img src="./img/radar.jpeg" alt="radar">
+
+                            <img src="./img/radar.jpeg" 
+                            alt="radar">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -218,7 +255,12 @@
                     <div class="card">
 
                         <div class="album">
+
                             <img src="./img/mixdaily.jpeg" alt="daily">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -236,8 +278,14 @@
 
                     <div class="card">
 
+                        <!-- album a forma di cerchio -->
                         <div class="album_2">
+
                             <img src="./img/youg.jpeg" alt="young">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+
                         </div>
     
                         <div class="text">
@@ -249,7 +297,12 @@
                     <div class="card">
 
                         <div class="album_2">
+
                             <img src="./img/einaudi.jpeg" alt="Einaudi">
+                            <div class="overlay">
+                                <a href=""><i class="fa-solid fa-play"></i></a>
+                            </div>
+                            
                         </div>
     
                         <div class="text">
@@ -271,7 +324,7 @@
 
     <!-- BLOCCO PLAYER -->
     <aside>
-        <!-- album e preferiti -->
+        <!-- mini-album e preferiti -->
         <div id="album_aside">
 
             <div class="aside_corner">
@@ -281,7 +334,7 @@
                 <div id="cd_text">
 
                    <span><strong>Sinister</strong></span>
-                   <span>Brano nome</span>
+                   <span id="special"><a ihref="">Brano nome</a></span>
                 
                 </div>
 
@@ -299,26 +352,32 @@
         <!-- player controller musica -->
         <div id="player">
 
+            <!-- parte play ecc -->
             <div id="console">
 
                 <a href=""><i class="fa-solid fa-shuffle"></i></a>
                 <a href=""><i class="fa-solid fa-backward-step"></i></a>
-                <a href=""><i id="play_button" class="fa-solid fa-play"></i></a>
+                <a id="play_button" href=""><i class="fa-solid fa-play"></i></a>
                 <a href=""><i class="fa-solid fa-forward-step"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
 
             </div>
 
+            <!-- barra progressi canzone -->
             <div id="time">
 
-                <span>0:25</span>
-                <a id="border_time" href=""></a> 
-                <span>4:35</span>
+                <span class="timer_song">0:25</span>
+                <div id="bar_progress">
+                    <div id="progress"></div>
+                    <div class="progress-thumb"></div>
+                </div>
+                <span class="timer_song">4:35</span>
 
             </div>
 
         </div>
 
+        <!-- impostazioni varie -->
         <div id="setting">
 
             <div id="setting_volume">
@@ -326,7 +385,9 @@
                 <a href=""><i class="fa-solid fa-list"></i></a>
                 <a href=""><i class="fa-solid fa-display"></i></a>
                 <a href=""><i class="fa-solid fa-volume-high"></i></a>
-                <a id="volume_border" href=""></a>
+                <div id="volume_border">
+                    <div id="set_volume"></div>
+                </div>
 
             </div>
 
