@@ -201,6 +201,8 @@ h1 {
     border: 1px solid white;
     height: 100px;
 }
+
+
  /* menù_main */
 #upgrade {
     display: flex;
@@ -252,7 +254,7 @@ a {
 
 /* album */
 
-.col_wrap {
+.row_wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -279,7 +281,7 @@ a {
     border: 1px solid orange;
 }
 
-.col {
+.row {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -288,7 +290,7 @@ a {
     margin: 40px 20px;    
 }
 
-.col .card {
+.row .card {
     
 }
 
@@ -298,7 +300,6 @@ a {
 /* BLOCCO PLAYER */
 
 /* regole macro-blocco */
-
 aside {
     display: flex;
     height: 100px;
@@ -308,6 +309,7 @@ aside {
 
 }
 
+
 /* regole micro-blocchi */
 #album_aside {
     /* DEBUG */
@@ -316,12 +318,91 @@ aside {
     width: 20%;
 }
 
+.aside_corner {
+    display: flex;
+}
+
+.aside_corner img {
+    max-width: 60px;
+    margin: 20px 10px;
+    vertical-align: middle;
+}
+
+#cd_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#cd_text strong {
+    color: #a2a2a2;
+}
+
+#cd_icon {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#cd_icon a {
+    font-size: 20px;
+    color: #a2a2a2;
+    padding-right: 10px;
+}
+
+
+
 #player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
      /* DEBUG */
      height: 100%;
      border: 1px solid white;
      width: 60%;
 }
+
+#console {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#console a {
+    color: white;
+    font-size: 25px;
+}
+
+#play_button {
+    padding: 5px 10px;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 9999px;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#time span {
+    color: white;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+#border_time {
+    width: 80%;
+    border-radius: 9999px;
+    background-color: #5e5e5e;
+}
+
 
 #setting {
      /* DEBUG */
