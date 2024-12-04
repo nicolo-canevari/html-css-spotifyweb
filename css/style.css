@@ -73,9 +73,13 @@ h1 {
 }
 
 #home_menu span {
-    color: white;
+    color: #a2a2a2;
     font-size: 15px;
     padding-left:10px;
+}
+
+#home_menu span:hover {
+    color: white;
 }
 
 
@@ -91,20 +95,31 @@ h1 {
     vertical-align: middle;
 }
 
+/* .inline_block i:hover {
+    background-color: white;
+} */
+
 #nav_playlist h3 {
     font-size: 20px;
     padding: 20px 10px;
     color: white;
 }
 
-#nav_playlist a {
-    text-decoration: none;
-    padding: 0 10px;
+.inline_block a {
+    margin-left: 10px;
 }
 
 #nav_playlist i {
     font-size: 50px;
     color: #a2a2a2;
+}
+
+#nav_playlist li {
+    color: #a2a2a2;
+}
+
+#your_playlist li:hover {
+    color: white;
 }
 
 #nav_playlist span {
@@ -114,21 +129,12 @@ h1 {
     padding-bottom: 30px;
 }
 
-#your_playlist {
-    padding-top: 10px;
-}
-
 #your_playlist li {
     text-decoration: none;
-    padding: 7px 10px;
+    padding: 10px 10px;
 }
 
-#your_playlist input{
-    font-size: 15px;
-    color: #a2a2a2;
-    background-color: black;
-    border: none;
-}
+
 
 
 #nav_account {
@@ -145,6 +151,10 @@ h1 {
 }
 
 #download_app span {
+    color: #a2a2a2;
+}
+
+#download_app span:hover {
     color: white;
 }
 
@@ -156,6 +166,7 @@ h1 {
 }
 
 #user {
+    display: flex;
     padding: 7px 10px;;
 }
 
@@ -173,7 +184,11 @@ h1 {
 
 #user span {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    color: #a2a2a2;
+}
+
+#user span:hover {
     color: white;
 }
 
@@ -223,6 +238,11 @@ h1 {
     text-decoration: none;
     position: fixed;
     z-index: 9999;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#upgrade a:hover {
+    transform: translateY(-10px);    
 }
 
 
@@ -251,6 +271,13 @@ h1 {
 a {
     text-decoration: none;
     color: #a2a2a2;
+}
+
+#main_list a:hover {
+    display: block;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid green;
 }
 
 
