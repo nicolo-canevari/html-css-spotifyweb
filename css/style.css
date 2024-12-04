@@ -84,6 +84,16 @@ h1 {
     color: white;
 }
 
+#home_menu a {
+    padding:5px;
+}
+
+#home_menu a:active {
+    display: block;
+    padding: 5px;
+    border-left: 2px solid green;
+}
+
 
 #nav_playlist {
     height: 65%;
@@ -243,7 +253,7 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
-    width: 80%;
+    width: 60%;
     text-decoration: none;
     list-style: none;
 }
@@ -251,6 +261,7 @@ h1 {
 a {
     text-decoration: none;
     color: #a2a2a2;
+    padding: 10px;
 }
 
 #main_list a:active {
@@ -267,7 +278,7 @@ h2 {
     color: white;
     font-size: 35px;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 80px;
 }
 
 .suggeriti {
