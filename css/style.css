@@ -9,14 +9,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-/* BLOCCO REGOLE CONTAINER #WRAPPER + NAV*/
-
+/* main wrapper */
 #wrapper {
     display: flex;
     height: calc(100vh - 100px);
 }
 
+/* dimensioni nav rispetto ad aside e wrapper */
 nav {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -55,6 +54,7 @@ nav {
 
 
 /* MENU' NAVBAR */
+
 /* icone menù */
 #home_menu {
    display: flex;
@@ -93,12 +93,12 @@ nav {
     margin: 0 20px;
     max-height: 50%;
     overflow: auto;
-
 }
 
 #nav_playlist h3 {
     font-size: 20px;
-    padding: 10px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
     color: #a2a2a2;
 }
 
@@ -137,7 +137,7 @@ nav {
     color:white;
 }
 
-/* lista della playlist */
+/* lista della playlist del nav*/
 #your_playlist li {
     text-decoration: none;
     padding: 10px 10px;
@@ -242,6 +242,7 @@ nav {
     right: 0;
 }
 
+/* link upgrade */
 #upgrade a {
     display: flex;
     justify-content: center;
@@ -258,6 +259,7 @@ nav {
     transform: scale(1.1);    
 }
 
+
 /* MENU' DEL MAIN */
 #main_menu {
     display: flex;
@@ -270,13 +272,13 @@ nav {
 /* lista del main */
 #main_list {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     height: 100%;
     width: 60%;
     text-decoration: none;
     list-style: none;
+    gap: 10px;
 }
 
 a {
@@ -302,6 +304,9 @@ h2 {
     color: white;
     font-size: 35px;
     margin-left: 30px;
+}
+
+#favorite {
     margin-top: 80px;
 }
 
@@ -312,17 +317,30 @@ h2 {
     margin-left: 30px;
 }
 
-/* prima colonna che andrà in wrap */
+/* righe delle card */
 .row_wrap {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
 }
 
-/* div che contiene immagine e titolo del disco */
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;  
+}
+
+
+/* elementi all'interno delle righe */
+
+/* container album text */
 .card {
-    max-width: 230px;
-    margin: 20px 10px;
+    height: 335px;
+    width: 230px;
+    margin: 20px 20px;
+    /* overflow: hidden; */
+    transition: all 0.3s ease;
 }
 
 /* div che racchiude l'immagine */
@@ -330,22 +348,20 @@ h2 {
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 230px;
 }
 
 .album img {
     width: 100%;
     height: auto;
-    /* display: block; */
+    object-fit: cover;
     transition: width 0.3s ease;
 }
-
 
 .album i {
     font-size: 40px;
     color: white;
     border: 4px solid white;
-    border-radius: 50%;
+    border-radius: 9999px;
     padding: 5px 10px;
 }
 
@@ -366,16 +382,19 @@ h2 {
 }
 
 /* div tondo che contiene l'immagine del disco */
+
 .album_2 {
+    overflow: hidden;
     position: relative;
-    display: inline-block;
-    width: 230px;
-    height: 230px;
+    border-radius: 9999px;
 }
 
-.album_2 img {
-    width: 100%;
-    height: auto;
+.album_2 i {
+    font-size: 40px;
+    color: white;
+    border: 4px solid white;
+    border-radius: 9999px;
+    padding: 5px 10px;
 }
 
 .album_2:hover .overlay {
@@ -384,23 +403,19 @@ h2 {
     align-items: center;
 }
 
-.album_2 i {
-    font-size: 40px;
-    color: white;
-    border: 4px solid white;
-    border-radius: 9999;
-    padding: 5px 10px;
+.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: width 0.3s ease;
 }
 
- /* div che racchiude il testo sotto l'immagine dell'album */
+
+ /* div che racchiude il testo sotto l'immagine  */
+
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 230px;
-    height: 30%;
-   
+    text-align: center;
+    width: 100%;  
 }
 
 h3 {
@@ -412,32 +427,6 @@ h3 {
 .text span {
     font-size: 1rem;
     color: #a2a2a2;
-}
-
-/* 2a colonna che contiene .card */
-.row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px;  
-}
-
-/* 3a colonna che contiene .card */
-
-    .album_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    border-radius: 9999px;
-}
-
-.row img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 
@@ -524,6 +513,7 @@ aside {
 #console a {
     color: white;
     font-size: 25px;
+    cursor: pointer;
 }
 
 #play_button {
@@ -531,6 +521,7 @@ aside {
     border: 3px solid white;
     border-radius: 9999px;
     transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 #play_button:hover {
@@ -550,6 +541,7 @@ aside {
     margin: 0 20px;
 }
 
+/* barra progressi della canzone */
 #bar_progress {
     width: 80%;
     border-radius: 9999px;
@@ -563,25 +555,27 @@ aside {
     background-color: white;
     border-radius: 9999px;
     transition: width 0.1s;
+    cursor: pointer;
 }
 
 #progress:hover {
     background-color: #4caf50;
 }
 
-.progress-thumb {
+.progress_thumb {
+    position: absolute;
     width: 20px;
     height: 20px;
     background-color: #4caf50;
-    border-radius: 50%;
-    border: 2px solid gray;
-    position: absolute;
+    border-radius: 9999px;
+    border: 3px solid gray;
     top: -2px;
     left: 24%;
     display: none;
+    cursor: pointer;
 }
 
-#progress:hover .progress-thumb {
+.progress_thumb:hover {
     display: block;
 }
 
@@ -615,6 +609,7 @@ aside {
     width: 35%;
     background-color: white;
     border-radius: 9999px;
+    cursor: pointer;
 }
 
 #set_volume:hover {
@@ -628,88 +623,55 @@ aside {
 
 @media screen and (max-width:1800px) {
 
-    .card img {
-        width: 90%;  
-    }
-
-    .text {
-        width: 90%;
-    }
-
-    .overlay {
-        width: 90%;
-    }
-
-    h3 {
-        font-size: 1rem; 
-    }
-
-    .text span {
-        font-size: 0.90rem;  
-    }
-
-    .album_2 {
-        width: 230px;
-        height: 230px;
+    .card {
+        width: 220px;
+        height: 300px;
     }
     
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1600px) {
 
     .card {
-        width: 70%;  
-    }
-
-    .text {
-        width: 70%;
-    }
-
-    .overlay {
-        width: 70%;
-    }
-
-    h3 {
-        font-size: 0.9rem; 
-    }
-
-    .text span {
-        font-size: 0.80rem;  
-    }
-
-    h2 {
-        margin-top: 60px;
+        width: 210px;
+        height: 310px;
     }
 
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1510px) {
 
-    .card img {
-        width: 50%;  
+    #long_text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .card {
+        width: 200px;
+        height: 290px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 190px;
+        height: 280px;
     }
 
-    .text {
-        width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 180px;
+        height: 270px;
     }
-
-    .overlay {
-        width: 50%;
-    }
-
-    h3 {
-        font-size: 0.8rem; 
-    }
-
-    .text span {
-        font-size: 0.70rem;  
-    }
-
-
 }
 
 /* versione mobile xs */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
 
     /* blocco navigazione principale */
     #wrapper nav {
@@ -772,23 +734,22 @@ aside {
 
     /* elementi main */
 
-    .card img {
-        width: 100%;    
+    #upgrade {
+        width: calc(100% - 80px);
     }
 
-    .text {
-        width: 100%;
-      }
-
-      h3 {
-        font-size: 1.2rem; 
-      }
-
-      .text span {
-        font-size: 1rem;  
+    #main_list {
+        width: 80%;
     }
 
+    .card {
+        width: 230px;
+        height: 335px;
+    }
 
+    #long_text {
+        display: block;
+    }
 
     /* elementi footer */
     #cd_icon {
