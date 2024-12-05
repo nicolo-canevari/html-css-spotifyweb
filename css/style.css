@@ -10,7 +10,7 @@ body {
 }
 
 
-/* BLOCCO CONTAINER #WRAPPER*/
+/* BLOCCO REGOLE CONTAINER #WRAPPER + NAV*/
 
 #wrapper {
     display: flex;
@@ -55,6 +55,7 @@ nav {
 
 
 /* MENU' NAVBAR */
+/* icone menù */
 #home_menu {
    display: flex;
    flex-direction: column;
@@ -95,15 +96,16 @@ nav {
 
 }
 
-.inline_block {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 #nav_playlist h3 {
     font-size: 20px;
     padding: 10px 10px;
     color: #a2a2a2;
+}
+
+/* icona playlist */
+.inline_block {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #nav_playlist i {
@@ -135,6 +137,7 @@ nav {
     color:white;
 }
 
+/* lista della playlist */
 #your_playlist li {
     text-decoration: none;
     padding: 10px 10px;
@@ -148,6 +151,7 @@ nav {
     max-height: 75px;
 }
 
+/* collegamento per il download */
 #download_app {
     display: flex;   
 }
@@ -169,6 +173,7 @@ nav {
     color: white;
 }
 
+/* bordo divisore */
 #nav_border {
     border: 1px solid #a2a2a2;
     width: 70%;
@@ -176,6 +181,7 @@ nav {
     margin-left: 25px;
 }
 
+/* user */
 #user {
     display: flex;
     margin: 5px 15px;
@@ -207,6 +213,7 @@ nav {
 
 /* BLOCCO DEL MAIN */
 
+/* regole del main */
 #wrapper main {
     overflow: auto;
     height: 100%;
@@ -261,6 +268,7 @@ nav {
     height: 50px;
 }
 
+/* lista del main */
 #main_list {
     display: flex;
     justify-content: space-evenly;
@@ -298,24 +306,28 @@ h2 {
     margin-top: 80px;
 }
 
+/* span sotto il 2° e 3° h2 */
 .suggeriti {
     color: #5e5e5e;
     font-size: 15px;
     margin-left: 30px;
 }
 
+/* prima colonna che andrà in wrap */
 .row_wrap {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
 }
 
+/* div che contiene immagine e titolo del disco */
 .card {
     width: 100%;
     max-width: 230px;
     margin: 20px 10px;
 }
 
+/* div che racchiude l'immagine */
 .album {
     position: relative;
     display: inline-block;
@@ -356,9 +368,15 @@ h2 {
     align-items: center;
 }
 
+/* div tondo che contiene l'immagine del disco */
 .album_2 {
     position: relative;
     display: inline-block;
+}
+
+.album_2 img {
+    width: 100%;
+    height: auto;
 }
 
 .album_2:hover .overlay {
@@ -375,7 +393,7 @@ h2 {
     padding: 5px 10px;
 }
 
- /* testo sotto l'immagine dell'album */
+ /* div che racchiude il testo sotto l'immagine dell'album */
 .text {
     display: flex;
     flex-direction: column;
@@ -397,12 +415,15 @@ h3 {
     color: #a2a2a2;
 }
 
+/* 2a colonna che contiene .card */
 .row {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 20px;  
 }
+
+/* 3a colonna che contiene .card */
 
 .row .album_2 {
     display: flex;
@@ -440,19 +461,20 @@ aside {
     display: flex;
 }
 
+/* immagine piccola del disco selezionato */
 .aside_corner img {
     max-width: 60px;
     margin: 20px 10px;
     vertical-align: middle;
 }
 
+/* titolo del disco selezionato */
 #cd_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #a2a2a2;
 }
-
 
 #special:hover {
     color: white;
@@ -463,6 +485,7 @@ aside {
     color: #a2a2a2;
 }
 
+/* icone */
 #cd_icon {
     display: flex;
     align-items: center;
@@ -488,6 +511,7 @@ aside {
     width: 60%;
 }
 
+/* parte della console */
 #console {
     display: flex;
     justify-content: space-around;
@@ -497,6 +521,7 @@ aside {
     margin-bottom: 10px;
 }
 
+/* tasti console */
 #console a {
     color: white;
     font-size: 25px;
@@ -513,6 +538,7 @@ aside {
     transform: translateY(-7px);    
 }
 
+/* timer della canzone */
 #time {
     display: flex;
     justify-content: center;
@@ -609,15 +635,15 @@ aside {
 
     .text {
         width: 90%;
-      }
+    }
 
-      h3 {
+    h3 {
         font-size: 1rem; 
-      }
+    }
 
-      .text span {
+    .text span {
         font-size: 0.90rem;  
-      }
+    }
     
 }
 
@@ -629,15 +655,19 @@ aside {
 
     .text {
         width: 70%;
-      }
+    }
 
-      h3 {
+    h3 {
         font-size: 0.9rem; 
-      }
+    }
 
-      .text span {
+    .text span {
         font-size: 0.80rem;  
-      }
+    }
+
+    h2 {
+        margin-top: 60px;
+    }
 
 }
 
@@ -661,7 +691,6 @@ aside {
 
 
 }
-
 
 /* versione mobile xs */
 @media screen and (max-width: 850px) {
@@ -729,6 +758,20 @@ aside {
 
     .card img {
         width: 100%;  
+
+        
+    }
+
+    .text {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 1.2rem; 
+      }
+
+      .text span {
+        font-size: 1rem;  
     }
 
     /* elementi footer */
