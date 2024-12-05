@@ -21,10 +21,14 @@
         <!-- BLOCCO DEL NAVBAR -->
         <nav>
 
+          <div id="nav_container">
+
             <div id="logo_spotify">
 
-                <img src="./img/logo-small.svg" alt="logo_spotify">
-                <h1>Spotify</h1>
+                <img id="big_img" src="./img/logo.svg" alt="">
+                <img id="small_img" src="./img/logo-small.svg" alt="">
+
+
             
             </div>
 
@@ -65,12 +69,19 @@
 
             </div>
 
+          </div>   
+
             <!-- account e download app -->
             <div id="nav_account">
 
                 <div id="download_app">
 
-                    <span><i class="fa-regular fa-circle-down"></i> Installa app</span>
+                    <div class="img_nav">
+                        <img src="./img/download.svg" alt="">
+                    </div>
+                    
+                    <!-- <i class="fa-regular fa-circle-down"></i> -->
+                    <span>Installa app</span>
                     
                 </div>
 
@@ -89,7 +100,7 @@
 
         </nav>
 
-        <!-- BLOCCO PRINCIPALE DELLA PAGINA -->
+        <!-- BLOCCO DEL MAIN -->
         <main>
             
             <!-- upgrade -->
@@ -326,7 +337,8 @@
     <aside>
         <!-- mini-album e preferiti -->
         <div id="album_aside">
-
+             
+            <!-- disco selezionato -->
             <div class="aside_corner">
 
                 <img src="./img/sinister.jpeg" alt="">
@@ -334,7 +346,7 @@
                 <div id="cd_text">
 
                    <span><strong>Sinister</strong></span>
-                   <span id="special"><a ihref="">Brano nome</a></span>
+                   <span id="special">Brano nome</span>
                 
                 </div>
 

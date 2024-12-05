@@ -12,16 +12,16 @@ body {
 
 /* BLOCCO CONTAINER #WRAPPER*/
 
-/* regole macro-blocco */
 #wrapper {
     display: flex;
     height: calc(100vh - 100px);
 }
 
+nav {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
 
-/* BLOCCO NAVBAR */
-
-/* regole macro-blocco */
 #wrapper nav {
     height: 100%;
     width: 250px;
@@ -29,43 +29,44 @@ body {
 }
 
 
-/* regole micro-blocchi nav*/
+/* BLOCCO NAVBAR */
+
+#nav_container {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+
+/* IL LOGO */
 #logo_spotify {
     display: flex;
     text-align: center;
+    align-items: center;
     color: white;
-    /* DEBUG */
-    /* width: 100%; */
-    /* border: 1px solid white;
-    height: 10%; */
+   
+
 }
 
-#logo_spotify img{
-    padding-left: 10px;
-    max-width: 50px; 
+#logo_spotify #big_img {
+    margin: 20px 20px;
 }
 
-h1 {
-    font-size: 25px;
-    padding-top: 20px;
-    padding-left: 10px;
+#logo_spotify #small_img {
+    display: none;
 }
 
 
+/* MENU' NAVBAR */
 #home_menu {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin: 20px 0;
-   /* DEBUG */
-    /* width: 100%; */
-   /* border: 1px solid white;
-   height: 15%; */ 
+   margin: 0 20px; 
 }
 
 #home_menu a {
     text-decoration: none;
-    padding-top: 5px;
     padding-left: 10px;
 }
 
@@ -84,22 +85,18 @@ h1 {
     color: white;
 }
 
-#home_menu a {
-    padding:5px;
-}
-
 #home_menu a:active {
     display: block;
     padding: 5px;
     border-left: 2px solid green;
 }
 
-
+/* PLAYLIST NAVBAR */
 #nav_playlist {
-    height: 65%;
-    /* DEBUG */
-    /* border: 1px solid white; */
-    /* width: 100%; */
+    margin: 0 20px;
+    max-height: 50%;
+    overflow: auto;
+
 }
 
 .inline_block {
@@ -109,12 +106,8 @@ h1 {
 
 #nav_playlist h3 {
     font-size: 20px;
-    padding: 20px 10px;
+    padding: 10px 10px;
     color: white;
-}
-
-.inline_block a {
-    margin-left: 10px;
 }
 
 #nav_playlist i {
@@ -124,6 +117,7 @@ h1 {
 
 #nav_playlist li {
     color: #a2a2a2;
+    list-style: none;
 }
 
 #your_playlist li:hover {
@@ -142,15 +136,29 @@ h1 {
     padding: 10px 10px;
 }
 
+/* ACCOUNT/DOWNLOAD */
+#nav_account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+}
 
-#download_app i {
-    font-size: 15px;
-    color: #a2a2a2;
-    padding: 7px 10px;;
+#download_app {
+    display: flex;   
+}
+
+#download_app .img_nav {
+    height: 20px;
+    width: 20px;
+    filter: invert(70%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(92%) contrast(89%);
+    margin-left: 20px;
 }
 
 #download_app span {
     color: #a2a2a2;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 #download_app span:hover {
@@ -159,14 +167,15 @@ h1 {
 
 #nav_border {
     border: 1px solid #a2a2a2;
-    width: 80%;
+    width: 70%;
     margin-top: 5px;
-    margin-left: 5%;
+    margin-left: 25px;
 }
 
 #user {
     display: flex;
-    padding: 7px 10px;;
+    margin: 5px 15px;
+    align-items: center;
 }
 
 #user a {
@@ -182,8 +191,8 @@ h1 {
 }
 
 #user span {
-    margin-left: 10px;
-    font-size: 25px;
+    margin-left: 5px;
+    font-size: 20px;
     color: #a2a2a2;
 }
 
@@ -192,9 +201,8 @@ h1 {
 }
 
 
-/* BLOCCO PRINCIPALE DELLA PAGINA */
+/* BLOCCO DEL MAIN */
 
-/* regole macro-blocco */
 #wrapper main {
     overflow: auto;
     height: 100%;
@@ -202,8 +210,6 @@ h1 {
     background-color: #141922;
 }
 
-
-/* regole micro-blocchi */
 #main-fixed {
     width: 100%;
     background-color: rgba(8, 11, 18, 0.5);
@@ -211,13 +217,17 @@ h1 {
 }
 
 
- /* menù_main */
+/* UPGRADE */
 #upgrade {
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 20px;
     height: 100%;
+
+    /* position: fixed;
+    z-index: 9999;
+    top: 0; */
 }
 
 #upgrade a {
@@ -238,7 +248,7 @@ h1 {
     transform: translateY(-10px);    
 }
 
-
+/* MENU' DEL MAIN */
 #main_menu {
     display: flex;
     justify-content: center;
@@ -272,8 +282,7 @@ a {
 }
 
 
-/* album */
-
+/* ALBUM E TESTI */
 h2 {
     color: white;
     font-size: 35px;
@@ -305,7 +314,7 @@ h2 {
 
 .album img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
 }
 
@@ -351,7 +360,6 @@ h2 {
     padding: 5px 10px;
 }
 
-
 .text {
     display: flex;
     flex-direction: column;
@@ -370,7 +378,6 @@ h3 {
     font-size: 17px;
     color: #a2a2a2;
 }
-
 
 .row {
     display: flex;
@@ -396,25 +403,21 @@ h3 {
 }
 
 
+/* BLOCCO ASIDE */
 
-
-/* BLOCCO PLAYER */
-
-/* regole macro-blocco */
 aside {
     display: flex;
     height: 100px;
     background-color: #282828;
 }
 
-
-/* regole micro-blocchi */
 #album_aside {
     /* DEBUG */
-    height: 100%;
+    height: 100px;
     width: 20%;
 }
 
+/* MUSICA SELEZIONATA */
 .aside_corner {
     display: flex;
 }
@@ -431,6 +434,7 @@ aside {
     justify-content: center;
     color: #a2a2a2;
 }
+
 
 #special:hover {
     color: white;
@@ -457,7 +461,7 @@ aside {
     color: white;
 }
 
-
+/* PLAYER CONSOLE */
 #player {
     display: flex;
     flex-direction: column;
@@ -538,7 +542,7 @@ aside {
     display: block;
 }
 
-
+/* IMPOSTAZIONI DEL PLAYER */
 #setting {
     display: flex;
     align-items: center;
@@ -575,21 +579,95 @@ aside {
 }
 
 
+/* RESPONSIVE */
+
+/* versione tablet */
+
+@media screen and (max_width:874) {
+    
+}
 
 
-/* versione small mmobile */
-@media screen and (max-width:480px) {
+/* versione mobile s */
+
+@media screen and (max-width:639px) {
+    
+}
+
+
+/* versione mobile xs */
+@media screen and (max-width: 896px) {
 
     /* blocco navigazione principale */
-    /#wrapper nav {
+    #wrapper nav {
         width: 80px;
     } 
-
 
     /* blocco di contenuto principale */
     #wrapper main {
         width: calc(100% - 80px);
     } 
 
+    /* elementi del nav */
+    #logo_spotify #big_img {
+        display: none;
+    }
 
+    #logo_spotify #small_img {
+        display: flex;
+        margin: 20px 15px;
+        height: 50px;
+        width: 50px;
+    }
+
+    #home_menu {
+        margin: 0 15px;
+    }
+
+    #home_menu span {
+        display:none
+    }
+
+    #nav_playlist h3{
+        display: none;
+    }
+
+    #nav_playlist .inline_block {
+        display:none;
+    }
+
+    #your_playlist {
+        display:none;
+    }
+
+    #nav_account span {
+        display: none;
+    }
+
+    #download_app .img_nav {
+        margin-left: 28px;
+    }
+
+    #nav_border {
+        display:none;
+    }
+
+    #user span {
+        display: none;
+    }
+
+    /* elementi footer */
+    #cd_icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    #volume_border {
+        width: 80px ;
+    }
 } 
+
+    
+
